@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.home_row {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  /* justify-content: space-evenly; */
+  margin: 0 auto;
+  z-index: 1;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  width: 100%;
+}
+
+.home_image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media screen and (max-width: 600px) {
+  .home_row {
+    display: block;
+  }
+  .home_image {
+    margin-bottom: -50px;
+  }
+}

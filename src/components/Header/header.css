@@ -1,0 +1,129 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-right: 10px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.slide-menu-icon {
+  height: 38px;
+  display: none;
+}
+
+.menu-icon {
+  color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 10px;
+  margin-top: 18px;
+}
+
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header_select {
+  height: 38px;
+  padding: 5px;
+  border: none;
+  width: 47px;
+  background: #e1e1e1;
+  outline: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.header_searchInput {
+  height: 18px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.header_searchIcon {
+  padding: 8px;
+  height: 22px !important;
+  background: #cd9042;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header_BasketCount {
+  margin-right: 10px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.header_bottom {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .slide-menu-icon {
+    display: block;
+  }
+  .header_option {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .header_option, .header_search {
+    display: none;
+  }
+  .header_bottom {
+    display: block;
+    height: 50px;
+    background: #131921;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 2px 10px;
+  }
+}

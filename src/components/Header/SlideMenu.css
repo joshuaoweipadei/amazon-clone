@@ -1,0 +1,74 @@
+.slide-menu {
+  background-color: #fff;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  overflow: scroll;
+}
+
+.slide-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.side-wrapper {
+  width: 100%;
+}
+
+.slide_header_optionUser {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(33, 46, 64);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.slide_header_optionLineOneUser {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.slide_header_optionLineTwo {
+  margin-right: 5px;
+}
+
+.slide_header_optionLineTwo > .close_icon {
+  font-size: 28px;
+}
+
+.signin_signup {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.signin_signup span {
+  font-size: 12px;
+}
+
+.slide_header_optionOrders {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 5px 0;
+}
+
+.slide_header_option {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.slide_header_option.line_one{
+  border-right: 1px solid #c0c0c0;
+}
